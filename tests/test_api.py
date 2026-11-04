@@ -9,7 +9,7 @@ from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from custom_components.dux_hp import const as C
 from custom_components.dux_hp.api import DuxApi, DuxAuthError
 
-HUB = "1a8f3b4e97da11ed9d6c005056983573"
+HUB = "0123456789abcdef0123456789abcdef"
 DATA = f"{C.API_BASE}hubs/{HUB}/plugins/esp32/modules/esp32/devices/0/data"
 
 

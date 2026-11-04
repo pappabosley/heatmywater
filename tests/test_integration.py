@@ -13,7 +13,7 @@ from homeassistant.config_entries import ConfigEntryState
 from custom_components.dux_hp import const as C
 from custom_components.dux_hp.api import DuxAuthError
 
-HUB = "1a8f3b4e97da11ed9d6c005056983573"
+HUB = "0123456789abcdef0123456789abcdef"
 
 # Values from Roy's live heater, 2026-11-04
 LIVE = {
