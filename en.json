@@ -1,0 +1,135 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Dux HP",
+        "description": "Sign in with your Dux HP app account. The hub ID is the 32-character ID of your heater (see the README for how to find it).",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "hub_id": "Hub ID"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Dux HP sign-in expired",
+        "description": "Enter your Dux HP app password again.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email or password was rejected.",
+      "cannot_connect": "Could not reach the Dux HP cloud.",
+      "invalid_hub": "Hub ID must be 32 hexadecimal characters.",
+      "no_data": "Signed in, but this hub ID returned no heater data."
+    },
+    "abort": {
+      "already_configured": "This heater is already set up.",
+      "reauth_successful": "Sign-in updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Dux HP options",
+        "data": {
+          "scan_interval": "Polling interval (seconds, default 1800 = 30 min)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "tank_temperature": {
+        "name": "Tank temperature"
+      },
+      "air_temperature": {
+        "name": "Air temperature"
+      },
+      "evaporator_temperature": {
+        "name": "Evaporator temperature"
+      },
+      "auto_setpoint": {
+        "name": "Auto setpoint"
+      },
+      "heat_pump_energy_today": {
+        "name": "Heat pump energy today"
+      },
+      "element_energy_today": {
+        "name": "Element energy today"
+      },
+      "error_code": {
+        "name": "Error code"
+      },
+      "running_mode_raw": {
+        "name": "Running mode (raw)"
+      },
+      "current_mode": {
+        "name": "Current mode",
+        "state": {
+          "auto": "Auto",
+          "auto_performance": "Auto (performance)",
+          "auto_economic": "Auto (economic)",
+          "auto_ecologic": "Auto (ecologic)",
+          "eco": "Eco",
+          "smart": "Smart",
+          "manual": "Manual",
+          "cold": "Cold",
+          "frost_protection": "Frost protection",
+          "boost": "Boost",
+          "holiday": "Holiday",
+          "anti_legionella": "Anti-legionella",
+          "pv": "Solar PV",
+          "maintenance": "Maintenance",
+          "rescue": "Rescue",
+          "unknown": "Unknown"
+        }
+      }
+    },
+    "binary_sensor": {
+      "compressor": {
+        "name": "Compressor"
+      },
+      "element": {
+        "name": "Element"
+      },
+      "fan": {
+        "name": "Fan"
+      },
+      "boost_active": {
+        "name": "Boost active"
+      },
+      "holiday_active": {
+        "name": "Holiday"
+      },
+      "problem": {
+        "name": "Problem"
+      }
+    },
+    "switch": {
+      "boost": {
+        "name": "Boost"
+      }
+    },
+    "select": {
+      "operating_mode": {
+        "name": "Operating mode",
+        "state": {
+          "auto": "Auto",
+          "eco": "Eco"
+        }
+      }
+    },
+    "number": {
+      "boost_target": {
+        "name": "Boost target temperature"
+      }
+    },
+    "button": {
+      "refresh": {
+        "name": "Refresh"
+      }
+    }
+  }
+}
